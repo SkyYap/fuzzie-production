@@ -172,10 +172,87 @@ export const CONNECTIONS: Connection[] = [
   {
     title: 'Slack',
     description:
-      'Use slack to send notifications to team members through your own custom bot.',
+      'Send notifications to team members through your own custom bot.',
     image: '/slack.png',
     connectionKey: 'slackNode',
     accessTokenKey: 'slackAccessToken',
     slackSpecial: true,
   },
+  {
+    title: 'Curve',
+    description: 'Specializing in efficient stablecoin trading with minimal slippage and low fees',
+    image: '/curve.png',
+    connectionKey: 'googleNode',
+    alwaysTrue: true,
+  },
+  {
+    title: 'Uniswap v2',
+    description: 'Connect your discord to send notification and messages',
+    image: '/uniswap.png',
+    connectionKey: 'discordNode',
+    accessTokenKey: 'webhookURL',
+  },
+  {
+    title: 'Uniswap v3',
+    description: 'Connect your discord to send notification and messages',
+    image: '/uniswap.png',
+    connectionKey: 'discordNode',
+    accessTokenKey: 'webhookURL',
+  },
+  {
+    title: 'Jupiter',
+    description: 'Create entries in your notion dashboard and automate tasks.',
+    image: '/jupiter.png',
+    connectionKey: 'notionNode',
+    accessTokenKey: 'accessToken',
+  },
+  {
+    title: 'Meteora',
+    description:
+      'Send notifications to team members through your own custom bot.',
+    image: '/meteora.png',
+    connectionKey: 'slackNode',
+    accessTokenKey: 'slackAccessToken',
+    slackSpecial: true,
+  },
+  {
+    title: 'Aave v2',
+    description:
+      'Send notifications to team members through your own custom bot.',
+    image: '/aave.png',
+    connectionKey: 'slackNode',
+    accessTokenKey: 'slackAccessToken',
+  },
+  {
+    title: 'Aave v3',
+    description:
+      'Send notifications to team members through your own custom bot.',
+    image: '/aave.png',
+    connectionKey: 'slackNode',
+    accessTokenKey: 'slackAccessToken',
+  },
+  {
+    title: 'Ethena',
+    description:
+      'Send notifications to team members through your own custom bot.',
+    image: '/ethena.png',
+    connectionKey: 'slackNode',
+    accessTokenKey: 'slackAccessToken',
+  },
+  {
+    title: 'Compound',
+    description:
+      'Send notifications to team members through your own custom bot.',
+    image: '/compound.png',
+    connectionKey: 'slackNode',
+    accessTokenKey: 'slackAccessToken',
+  },
+  {
+    title: 'Wormhole',
+    description:
+      'Send notifications to team members through your own custom bot.',
+    image: '/wormhole.jpeg',
+    connectionKey: 'slackNode',
+    accessTokenKey: 'slackAccessToken',
+  }
 ]

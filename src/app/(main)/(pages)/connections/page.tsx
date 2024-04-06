@@ -108,21 +108,18 @@ const Connections = async (props: Props) => {
       <h1 className="sticky top-0 z-[10] flex items-center justify-between border-b bg-background/50 p-6 text-4xl backdrop-blur-lg">
         Connections
       </h1>
-      <div className="relative flex flex-col gap-4">
-        <section className="flex flex-col gap-4 p-6 text-muted-foreground">
-          Connect all your apps directly from here. You may need to connect
-          these apps regularly to refresh verification
-          {CONNECTIONS.map((connection) => (
+      <div className="flex flex-wrap p-6 text-muted-foreground">
+        {CONNECTIONS.map((connection) => (
+          <div key={connection.title} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
             <ConnectionCard
-              key={connection.title}
               description={connection.description}
               title={connection.title}
               icon={connection.image}
               type={connection.title}
               connected={connections}
             />
-          ))}
-        </section>
+          </div>
+        ))}
       </div>
     </div>
   )
